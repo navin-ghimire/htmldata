@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+</head>
+
+
+<body>
+  
+<!-- this is comment(select then cntrl + /) -->
+
+<h1>This is Contact Page</h1>
+  <fieldset>
+    <legend>Your FeedBack</legend>
+    <form action="mailto:navinghimire143@gmail.com?subject=Hi" method="post" enctype="text/plain">
+    <p>
+      <label for="mail">Email</label>
+      <input type="email" id="mail" name="username" placeholder="navi143@example.com" required>
+    </p>
+    
+    <p>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="username" value="navi"  maxlength="10">
+    </p>
+    <p>
+      <h3>Select Your Gender</h3>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" checked id="male" value="male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </p>
+    <p>
+      <h3>Select Your Habits</h3>
+      <label for="dance">Dance</label>
+      <input type="checkbox" name="habits" checked id="dance" value="dance">
+      <label for="sing">Sing</label>
+      <input type="checkbox" name="habits" id="sing" value="sing">
+      <label for="playing">Playing</label>
+      <input type="checkbox" name="habits" id="playing" value="playing">
+    </p>
+
+    <p>
+      <h3>Select Your Country</h3>
+      <select name="country" id="country" label="Select Country">
+        <option value="Nepal" selected="Nepal">Nepal</option>
+        <option value="China">China</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="USA">USA</option>
+      </select>
+    </p>
+    <p>
+      <h3>Select Fav Coffee</h3>
+      <select name="coffee">
+        <optgroup label="Hard Coffee">
+          <option value="expresso">Expresso</option>
+          <option value="mochiato">Mochiato</option>
+
+        </optgroup>
+        <optgroup label="Light Coffee">
+          <option value="cappuccino">cappuccino</option>
+          <option value="americano">Americano</option>
+
+        </optgroup>
+
+      </select>
+       
+    </p>
+    <p>
+      <label for="date">Select Date of Joining</label>
+      <input type="date" id="date" name="date">
+    </p>
+    <p>
+      <label for="color">Select Fav Color</label>
+      <input type="color" id="color" name="color">
+    </p>
+
+    <p>
+      <!-- <label for="msg">Type Feedback</label> -->
+      <textarea placeholder="type message" name="msg" id="msg" cols="40" rows="10"></textarea>
+    </p>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    
+    </form>
+
+  </fieldset>
+  
+
+
+</body>
+
+
+</html>
